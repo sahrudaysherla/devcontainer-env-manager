@@ -1,0 +1,32 @@
+{
+	"name": "Node.js Development",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss",
+				"formulahendry.auto-rename-tag"
+			],
+			"settings": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true,
+				"eslint.validate": ["javascript", "typescript"]
+			}
+		}
+	},
+	"forwardPorts": [3000, 5173, 4321],
+	"containerEnv": {
+		"NODE_ENV": "development"
+	},
+	"mounts": [
+		"type=volume,source=node-modules-cache,target=/workspaces/node-project/node_modules"
+	],
+	"postCreateCommand": "npm install",
+	"postStartCommand": "echo 'Node.js development environment ready!'",
+	"remoteUser": "node"
+}
