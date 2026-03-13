@@ -1,6 +1,6 @@
 # DevContainer Environment Manager
 
-[![CI](https://github.com/sahru/devcontainer-env-manager/actions/workflows/ci.yml/badge.svg)](https://github.com/sahru/devcontainer-env-manager/actions/workflows/ci.yml)
+[![CI](https://github.com/sahru/devcontainer-env-manager/actions/workflows/ci.yml/badge.svg)](https://github.com/sahru/devcontainer-env-manager/.github/workflows/ci.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sahru/devcontainer-env-manager)](https://goreportcard.com/report/github.com/sahru/devcontainer-env-manager)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
